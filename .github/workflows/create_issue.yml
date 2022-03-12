@@ -1,6 +1,6 @@
 name: Create issue
 
-# githubのissueが開かれたときに作動(type->[closed]で閉じられた時)
+# githubのissueが開かれたときに作動(type->[closed]で閉じられた時の動作)
 on:
   issues:
   push:

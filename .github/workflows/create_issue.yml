@@ -1,6 +1,6 @@
 name: Create issue
 
-# githubのissueが開かれたときに作動(type->[colosed]で湿られたとき)
+# githubのissueが開かれたときに作動(type->[closed]で閉じられたとき)
 on:
   issues:
   push:
@@ -24,7 +24,7 @@ jobs:
       uses: atlassian/gajira-create@v2.0.1
       with:
         # 付けたいチケット名を選択(jiraのAPItokenのlabelに合わせる)
-        project: {Special Task Project #1}
+        project: {STP1}
         # 課題タイプを指定
         issuetype: Task
         # issuesのタイトルが要約になるように設定
